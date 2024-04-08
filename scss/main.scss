@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply relative after:absolute after:top-0 after:w-[300px] after:h-[300px] overflow-hidden after:rounded-full left-0 hover:bg-transparent after:translate-x-[-2.5rem] after:translate-y-[3.5rem] ease-in-out duration-1000 hover:after:translate-y-[-2.5rem] after:z-[-1] after:ease-in-out after:duration-1000 hover:z-[1];
+}
+
+.btn__black{
+   @apply after:bg-color-secondary hover:text-color-white after:left-0;
+}
+
+.btn__green{
+    @apply after:bg-color-green-light hover:text-color-secondary-light after:left-0;
+}
+
+.btn__white{
+    @apply after:bg-color-white after:left-0;
+}
+
+
+.active_chevron{
+    @apply rotate-180 ease-in-out duration-300;
+}
+
+
+.c-container:hover .custom{
+    @apply bg-color-secondary text-color-green-light;
+}
+
+.h-lg-active{
+    @apply bg-color-white;
+
+}
+.h-lg-active .preview{
+    @apply block;
+}
+
+.scroll__header{
+    @apply fixed bg-color-light border-none top-0 shadow-lg;
+}
